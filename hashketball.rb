@@ -197,12 +197,30 @@ def big_shoe_rebounds
       info[:players].each do |attribute_hash|
         if attribute_hash[:number] == num
           binding.pry
-          return :player_name
+          return attribute_hash[:player_name]
 
         end
       end
     end
+  end
 
+  def player_by_number(num)
+    #return player name
+    players = game_hash.map do |team, info|
+       info[:players]
+    end
+
+    players.faltten
+
+      
+      players.each do |attribute_hash|
+        if attribute_hash[:number] == num
+          binding.pry
+          return attribute_hash[:player_name]
+
+        end
+      end
+    end
   end
 
 

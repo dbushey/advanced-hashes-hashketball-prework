@@ -197,6 +197,7 @@ def big_shoe_rebounds
       info[:players].each do |attribute_hash|
         if attribute_hash[:number] == num
           return :player_name
+          binding.pry
         end
       end
     end

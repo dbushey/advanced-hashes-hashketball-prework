@@ -198,7 +198,7 @@ def big_shoe_rebounds
         if attribute_hash[:number] == num
           binding.pry
           return :player_name
-          
+
         end
       end
     end
